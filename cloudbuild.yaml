@@ -1,0 +1,8 @@
+substitutions:
+  _IMAGE_NAME: vertexai_ep
+  _IMAGE_TAG: v1.0.2
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'asia-northeast1-docker.pkg.dev/${PROJECT_ID}/docker-repo/${_IMAGE_NAME}:${_IMAGE_TAG}', '.' ]
+images:
+- 'asia-northeast1-docker.pkg.dev/${PROJECT_ID}/docker-repo/${_IMAGE_NAME}:${_IMAGE_TAG}'

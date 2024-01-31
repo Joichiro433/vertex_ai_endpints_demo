@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["Joichiro433 <joichiro322@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+numpy = "1.26.2"
+pandas = "2.1.4"
+polars = "0.20.2"
+fastapi = "0.108.0"
+lightgbm = "4.2.0"
+pydantic = "2.5.3"
+rich = "13.7.0"
+jupyterlab = "4.0.9"
+pyarrow = "14.0.2"
+uvicorn = "0.25.0"
+google-cloud-aiplatform = "1.39.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
